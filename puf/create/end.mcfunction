@@ -1,0 +1,3 @@
+
+
+kill @e[tag=puf]

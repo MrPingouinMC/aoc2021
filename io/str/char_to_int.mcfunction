@@ -1,0 +1,56 @@
+scoreboard players set CHAR REG -1
+
+data modify storage iobuf char set value "NONE"
+data modify storage iobuf char set from storage iobuf data[0]
+execute if data storage iobuf {"char":"A"} run scoreboard players set CHAR REG 1
+execute if data storage iobuf {"char":"B"} run scoreboard players set CHAR REG 2
+execute if data storage iobuf {"char":"C"} run scoreboard players set CHAR REG 3
+execute if data storage iobuf {"char":"D"} run scoreboard players set CHAR REG 4
+execute if data storage iobuf {"char":"E"} run scoreboard players set CHAR REG 5
+execute if data storage iobuf {"char":"F"} run scoreboard players set CHAR REG 6
+execute if data storage iobuf {"char":"G"} run scoreboard players set CHAR REG 7
+execute if data storage iobuf {"char":"H"} run scoreboard players set CHAR REG 8
+execute if data storage iobuf {"char":"I"} run scoreboard players set CHAR REG 9
+execute if data storage iobuf {"char":"J"} run scoreboard players set CHAR REG 10
+execute if data storage iobuf {"char":"K"} run scoreboard players set CHAR REG 11
+execute if data storage iobuf {"char":"L"} run scoreboard players set CHAR REG 12
+execute if data storage iobuf {"char":"M"} run scoreboard players set CHAR REG 13
+execute if data storage iobuf {"char":"N"} run scoreboard players set CHAR REG 14
+execute if data storage iobuf {"char":"O"} run scoreboard players set CHAR REG 15
+execute if data storage iobuf {"char":"P"} run scoreboard players set CHAR REG 16
+execute if data storage iobuf {"char":"Q"} run scoreboard players set CHAR REG 17
+execute if data storage iobuf {"char":"R"} run scoreboard players set CHAR REG 18
+execute if data storage iobuf {"char":"S"} run scoreboard players set CHAR REG 19
+execute if data storage iobuf {"char":"T"} run scoreboard players set CHAR REG 20
+execute if data storage iobuf {"char":"U"} run scoreboard players set CHAR REG 21
+execute if data storage iobuf {"char":"V"} run scoreboard players set CHAR REG 22
+execute if data storage iobuf {"char":"W"} run scoreboard players set CHAR REG 23
+execute if data storage iobuf {"char":"X"} run scoreboard players set CHAR REG 24
+execute if data storage iobuf {"char":"Y"} run scoreboard players set CHAR REG 25
+execute if data storage iobuf {"char":"Z"} run scoreboard players set CHAR REG 26
+execute if data storage iobuf {"char":"a"} run scoreboard players set CHAR REG 32
+execute if data storage iobuf {"char":"b"} run scoreboard players set CHAR REG 33
+execute if data storage iobuf {"char":"c"} run scoreboard players set CHAR REG 34
+execute if data storage iobuf {"char":"d"} run scoreboard players set CHAR REG 35
+execute if data storage iobuf {"char":"e"} run scoreboard players set CHAR REG 36
+execute if data storage iobuf {"char":"f"} run scoreboard players set CHAR REG 37
+execute if data storage iobuf {"char":"g"} run scoreboard players set CHAR REG 38
+execute if data storage iobuf {"char":"h"} run scoreboard players set CHAR REG 39
+execute if data storage iobuf {"char":"i"} run scoreboard players set CHAR REG 40
+execute if data storage iobuf {"char":"j"} run scoreboard players set CHAR REG 41
+execute if data storage iobuf {"char":"k"} run scoreboard players set CHAR REG 42
+execute if data storage iobuf {"char":"l"} run scoreboard players set CHAR REG 43
+execute if data storage iobuf {"char":"m"} run scoreboard players set CHAR REG 44
+execute if data storage iobuf {"char":"n"} run scoreboard players set CHAR REG 45
+execute if data storage iobuf {"char":"o"} run scoreboard players set CHAR REG 46
+execute if data storage iobuf {"char":"p"} run scoreboard players set CHAR REG 47
+execute if data storage iobuf {"char":"q"} run scoreboard players set CHAR REG 48
+execute if data storage iobuf {"char":"r"} run scoreboard players set CHAR REG 49
+execute if data storage iobuf {"char":"s"} run scoreboard players set CHAR REG 50
+execute if data storage iobuf {"char":"t"} run scoreboard players set CHAR REG 51
+execute if data storage iobuf {"char":"u"} run scoreboard players set CHAR REG 52
+execute if data storage iobuf {"char":"v"} run scoreboard players set CHAR REG 53
+execute if data storage iobuf {"char":"w"} run scoreboard players set CHAR REG 54
+execute if data storage iobuf {"char":"x"} run scoreboard players set CHAR REG 55
+execute if data storage iobuf {"char":"y"} run scoreboard players set CHAR REG 56
+execute if data storage iobuf {"char":"z"} run scoreboard players set CHAR REG 57
