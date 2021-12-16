@@ -8,3 +8,4 @@ execute at @s run function aoc:puf/priv/set
 
 #tellraw @a ["set ", {"nbt":"Pos","entity":"@s"}]
 #execute at @s run tellraw @a ["set data", {"nbt":"data", "storage":"puf"}]
+#execute at @s run tellraw @a ["set", {"nbt":"RecordItem.tag", "block":"~ ~ ~"}]

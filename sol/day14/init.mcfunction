@@ -21,3 +21,4 @@ data modify storage buf3 data[-1].map set from storage buf data[1].word[0]
 function aoc:io/read/next/buffer
 function aoc:io/read/next/buffer
 execute if score CONTINUE REG matches 1 at @s run function aoc:sol/day14/init
+
