@@ -27,7 +27,7 @@ data modify storage buf3 data set value []
 function aoc:io/init/buffer2
 function aoc:sol/day14/count
 
-tellraw @a ["buf3", {"nbt":"data","storage":"buf3"}]
+#tellraw @a ["buf3", {"nbt":"data","storage":"buf3"}]
 
 scoreboard players set MIN VAR 100000
 scoreboard players set MAX VAR -1

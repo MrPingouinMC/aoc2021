@@ -26,10 +26,4 @@ function aoc:io/init/buffer2
 execute as @e[tag=builder] at @s run function aoc:sol/day11/build
 
 scoreboard players set STEP VAR 0
-execute as @e[tag=builder] at @s run function aoc:sol/day11/iter2
-
-kill @e[tag=builder]
-scoreboard players operation SOL VAR = STEP VAR
-
-function aoc:core/print_score
-function aoc:core/timer_end
+execute as @e[tag=builder] at @s run function aoc:sol/day11/iter3

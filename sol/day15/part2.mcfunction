@@ -1,7 +1,7 @@
 
 scoreboard players set PART AOC 1
 scoreboard players set DAY AOC 15
-scoreboard players set DAY AOC 0
+#scoreboard players set DAY AOC 0
 
 scoreboard players set YEAR AOC 2021
 function aoc:core/load_input

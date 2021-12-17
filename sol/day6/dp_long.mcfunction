@@ -12,7 +12,7 @@ scoreboard players operation DIF VAR -= VAL VAR
 scoreboard players operation A VAR = DIF VAR
 scoreboard players set B VAR 9
 function aoc:sol/day6/try_get_long
-data modify storage buf r1 set from storage puf data
+data modify storage buf r1 set from storage puf data.long
 #scoreboard players operation R1 VAR = R PUF
 execute if score FOUND PUF matches 0 run function aoc:sol/day6/stack_entry
 execute if score FOUND PUF matches 1 run scoreboard players add FOUND_SOME VAR 1
@@ -21,7 +21,7 @@ execute if score FOUND PUF matches 1 run scoreboard players add FOUND_SOME VAR 1
 scoreboard players operation A VAR = DIF VAR
 scoreboard players set B VAR 7
 function aoc:sol/day6/try_get_long
-data modify storage buf r2 set from storage puf data
+data modify storage buf r2 set from storage puf data.long
 #scoreboard players operation R2 VAR = R PUF
 execute if score FOUND PUF matches 0 run function aoc:sol/day6/stack_entry
 execute if score FOUND PUF matches 1 run scoreboard players add FOUND_SOME VAR 1
@@ -33,7 +33,8 @@ execute if score FOUND_SOME VAR matches 2 run function aoc:long/add
 execute if score FOUND_SOME VAR matches 2 run scoreboard players operation V PUF = DAY VAR
 execute if score FOUND_SOME VAR matches 2 run scoreboard players operation V PUF *= 1000 CONST
 execute if score FOUND_SOME VAR matches 2 run scoreboard players operation V PUF += VAL VAR
-execute if score FOUND_SOME VAR matches 2 run data modify storage puf data set from storage long data
+execute if score FOUND_SOME VAR matches 2 run data modify storage puf data set value {}
+execute if score FOUND_SOME VAR matches 2 run data modify storage puf data.long set from storage long data
 execute if score FOUND_SOME VAR matches 2 run function aoc:puf/set
 execute if score FOUND_SOME VAR matches 2 if data storage buf stack[0].main run data modify storage long add set from storage buf sum
 execute if score FOUND_SOME VAR matches 2 if data storage buf stack[0].main run function aoc:long/add
@@ -42,6 +43,7 @@ execute if score FOUND_SOME VAR matches 2 if data storage buf stack[0].main run 
 
 
 #tellraw @a ["stack ", {"nbt":"stack","storage":"buf"}]
+#tellraw @a ["size", {"score":{"objective":"VAR","name":"SIZE"}}]
 
 execute if score FOUND_SOME VAR matches 2 run data remove storage buf stack[0]
 execute store result score SIZE VAR run data get storage buf stack

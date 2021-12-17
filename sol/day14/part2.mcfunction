@@ -44,13 +44,11 @@ execute as @e[tag=puf] at @s run function aoc:sol/day14/cumulate2
 
 function aoc:sort/quick_sort_long
 
-tellraw @a ["sorted  ", {"nbt":"arr","storage":"sort"}]
+#tellraw @a ["sorted  ", {"nbt":"arr","storage":"sort"}]
 
 
-data modify storage long data set from storage sort arr[0]
-function aoc:long/display
+
 data modify storage long data set from storage sort arr[-1]
-function aoc:long/display
 data modify storage long add set from storage sort arr[0]
 
 function aoc:long/sub

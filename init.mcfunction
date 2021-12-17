@@ -4,7 +4,7 @@ gamerule doMobSpawning false
 #gamerule logAdminCommands false
 
 gamerule maxCommandChainLength 2147483647
-gamerule maxCommandChainLength 24000000
+gamerule maxCommandChainLength 2000000000
 
 #Lol no, not needed this year
 #forceload add 0 0

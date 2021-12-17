@@ -34,7 +34,7 @@ kill @e[tag=builder]
 summon marker 17 9 148 {Tags:[builder]}
 scoreboard players set STARTX VAR 17
 scoreboard players set STARTY VAR 148
-execute as @e[tag=builder] at @s run fill ~ ~ ~ ~300 ~ ~10 air
+execute as @e[tag=builder] at @s run fill ~ ~ ~ ~100 ~ ~8 air
 function aoc:io/init/buffer2
 execute as @e[tag=builder] at @s run function aoc:sol/day13/draw
 kill @e[tag=builder]

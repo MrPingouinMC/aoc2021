@@ -14,7 +14,7 @@ function aoc:sol/day6/parse
 
 
 scoreboard players set SUM VAR 0
-scoreboard players set DAY VAR 18
+scoreboard players set DAY VAR 80
 data modify storage buf stack set value []
 
 function aoc:io/init/buffer
