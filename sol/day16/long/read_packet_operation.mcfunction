@@ -20,18 +20,19 @@ execute store result storage buf stack[-1].op int 1 run scoreboard players get I
 
 #tellraw @a ["l i read", {"score":{"objective":"VAR","name":"L"}}, " ", {"score":{"objective":"VAR","name":"I"}}, " ", {"score":{"objective":"VAR","name":"READ"}}]
 
-function aoc:sol/day16/read_packet_recc
+function aoc:sol/day16/long/read_packet_recc
 
 execute store result score OP VAR run data get storage buf stack[-1].op
 data modify storage buf4 data set from storage buf stack[-1].vals
 #tellraw @a ["operation ", {"score":{"objective":"VAR","name":"OP"}}, " ", {"nbt":"data","storage":"buf4"}]
 
-scoreboard players set VAL VAR 0
-execute if score OP VAR matches 1 run scoreboard players set VAL VAR 1
-execute if score OP VAR matches 2..3 run execute store result score VAL VAR run data get storage buf4 data[0]
+data modify storage long data set value [0]
+execute if score OP VAR matches 1 run data modify storage long data set value [1]
+execute if score OP VAR matches 2..3 run data modify storage long data set from storage buf4 data[0]
 function aoc:io/init/buffer4
-execute if score OP VAR matches 0..3 run function aoc:sol/day16/operation
-execute if score OP VAR matches 5..7 run function aoc:sol/day16/operation2
+execute if score OP VAR matches 0..3 run function aoc:sol/day16/long/operation
+execute if score OP VAR matches 5..7 run function aoc:sol/day16/long/operation2
 
+data modify storage buf val set from storage long data
 
 data remove storage buf stack[-1]
