@@ -14,8 +14,9 @@ Run to download inputs for a single day :
 ```sh
 python update.py <year> [day]
 ```
+Run ```/function aoc:init``` once to initialize.
 Then, in game, you can run a solution with :
-```/function aoc:sol_2021/day1/part1```
+```/function aoc:sol/day1/part1```
 
 
 
