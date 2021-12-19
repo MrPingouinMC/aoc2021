@@ -10,3 +10,6 @@ execute if block ~ ~ ~ diorite if block ~ ~ ~-1 jukebox if score SIZEZ MARKER ma
 
 #execute unless score SIZEX MARKER matches 10 unless score SIZEX MARKER matches 100 run tellraw @a ["Unimplemented for grid size : ", {"score":{"objective":"MARKER","name":"SIZEX"}}]
 #execute unless score SIZEZ MARKER matches 10 unless score SIZEZ MARKER matches 100 run tellraw @a ["Unimplemented for grid size : ", {"score":{"objective":"MARKER","name":"SIZEX"}}]
+
+
+	

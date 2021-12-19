@@ -16,3 +16,5 @@ execute if score YEAR AOC matches 2021 if score DAY AOC matches 14 run data modi
 execute if score YEAR AOC matches 2021 if score DAY AOC matches 15 run data modify storage input data set from storage aoc_2021_day15 data
 execute if score YEAR AOC matches 2021 if score DAY AOC matches 16 run data modify storage input data set from storage aoc_2021_day16 data
 execute if score YEAR AOC matches 2021 if score DAY AOC matches 17 run data modify storage input data set from storage aoc_2021_day17 data
+execute if score YEAR AOC matches 2021 if score DAY AOC matches 18 run data modify storage input data set from storage aoc_2021_day18 data
+execute if score YEAR AOC matches 2021 if score DAY AOC matches 19 run data modify storage input data set from storage aoc_2021_day19 data
