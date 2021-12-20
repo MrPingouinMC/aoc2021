@@ -10,9 +10,10 @@ execute as @e[tag=marker] store result score START_X MARKER run data get entity 
 execute as @e[tag=marker] store result score START_Y MARKER run data get entity @s Pos[1]
 execute as @e[tag=marker] store result score START_Z MARKER run data get entity @s Pos[2]
 
-scoreboard players set X MAKER 0
-scoreboard players set Y MAKER 0
-scoreboard players set Z MAKER 0
+scoreboard players set X MARKER 0
+scoreboard players set Y MARKER 0
+scoreboard players set Z MARKER 0
+scoreboard players set DONE MARKER 0
 
 #2D horizontal area
-scoreboard players set MODE MAKER 2
+scoreboard players set MODE MARKER 2
